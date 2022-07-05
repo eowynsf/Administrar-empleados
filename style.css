@@ -1,0 +1,140 @@
+/*Globales*/
+html{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before.after {
+    box-sizing: inherit;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;/*1200px*/
+    margin: 0 auto;
+    
+
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*Utilidades*/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.fw-300{
+    font-weight:300;
+}
+.centrar-texto{
+    text-align: center;
+
+}
+.d-blok{
+    display: block!important;
+
+}
+.contenido-centrado{
+    max-width: 800;
+}
+/*Header*/
+.site-header {
+    background-color: #333333;
+    padding: 4rem 0 3rem 0;
+}
+.inicio{
+    background-image: url('yourspace2.png');
+    background-position: center center;
+    background-size:cover;
+    height: 100vh;
+    min-height: 30rem;
+}
+.contenido-header{
+    /*Poner todo el contenido del header centrado*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-header h1{
+    color: white;
+    padding: 2rem;
+    max-width: 60 rem;
+    line-height: 2;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;/*quita el subrayado*/
+    font-size: 1rem;/*pone las letras mas grandecitas*/
+    display: block;
+}
+.navegacion a:hover{
+    color: darkblue;
+}
+
+
+@media(min-width: 768px){
+    .mobile.menu{
+        display: none;
+
+    }
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}
+@media(min-width: 768px){
+    .contenido-header{
+        text-align: center;
+    }
+    
+}
+@media(min-width: 768px){
+    .navegacion a{
+        display: inline-block;/*ayuda a que sea horizontal no vertical*/
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+        margin: 0;
+
+    }
+}
+.navegacion:target{
+    display: block;
+}
+@media (min-width: 768px){
+    .navegacion{
+        display: block;
+    }
+}
+
+@media (min-width: 768px){
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono{
+    text-align: center;
+
+}
+@media (min-width: 768px){
+    .icono{
+        flex-basis: calc(33.3% -1rem);
+    } /*esto es para que los iconos queden centraditos y parejos*/
+}
